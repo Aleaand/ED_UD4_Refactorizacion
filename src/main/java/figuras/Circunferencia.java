@@ -29,10 +29,10 @@ public class Circunferencia {
     }
     private static final double PI = 3.1416;
 
-    public boolean esIgual(Circunferencia otro, boolean conDecimales) {
+    public boolean esIgual(Circunferencia otro, boolean considerarDecimales) {
         double radio1 = this.getRad();
         double radio2 = otro.getRad();
-        if (conDecimales) {
+        if (considerarDecimales) {
             if (radio1 == radio2) {
                 return true;
             } else {
