@@ -19,8 +19,13 @@ public class Circunferencia {
         final double d = 2 * getRad();
         System.out.println("Di�metro: " + d);
         System.out.println("Color: " + "rojo");
-        double area = 2 * PI * getRad() * getRad();
+        double area = calcularArea();
         System.out.println(area);
+    }
+
+    private double calcularArea() {
+        double area = 2 * PI * getRad() * getRad();
+        return area;
     }
     private static final double PI = 3.1416;
 
