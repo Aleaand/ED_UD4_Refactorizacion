@@ -19,9 +19,10 @@ public class Circunferencia {
         final double d = 2 * getRad();
         System.out.println("Di�metro: " + d);
         System.out.println("Color: " + "rojo");
-        double area = 2 * 3.1416 * getRad() * getRad();
+        double area = 2 * PI * getRad() * getRad();
         System.out.println(area);
     }
+    private static final double PI = 3.1416;
 
     public boolean esIgual(Circunferencia otro, boolean conDecimales) {
         double radio1 = this.getRad();
